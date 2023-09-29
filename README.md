@@ -23,7 +23,7 @@ Com o código já pronto, ele ficará dessa forma.
 
 ## ♾️Fontes Consultadas
 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Link do Bootstrap  
-[ViaCep](https://viacep.com.br/exemplo/javascript/)
+[ViaCep](https://viacep.com.br/exemplo/javascript/) - Link do ViaCep
 
 ## Tecnologias Utilizadas
 🟣JavaScript  
