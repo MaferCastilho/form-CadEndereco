@@ -1,3 +1,9 @@
+## Índice 
+[Descrição](#descri%C3%A7%C3%A3o-)
+[Funcionalidades](#%EF%B8%8Ffontes-consultadas)
+[Fontes Consultadas](#%EF%B8%8Ffontes-consultadas)
+[Tecnologias Utilizadas](#tecnologias-utilizadas)
+
 ## Descrição 📝
 Nesse projeto pegamos um código do Bootstrap 5 de layout e colocamos no VScode, a forma que iremos utilizar é para um usúario cadastrar o seu endereço.  
 Passo a passo de como pegar o código do bootstrap:  
@@ -17,6 +23,7 @@ Com o código já pronto, ele ficará dessa forma.
 
 ## ♾️Fontes Consultadas
 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Link do Bootstrap  
+[ViaCep](https://viacep.com.br/exemplo/javascript/)
 
 ## Tecnologias Utilizadas
 🟣JavaScript  
