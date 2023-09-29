@@ -11,10 +11,15 @@ Mudamos textos, mexemos no cool (que seria para almentar ou diminuir o tamanho d
 inicializado Javascript
 no html colocamos o link de ligação para Javascript
 e dentro de Javascript colocamos strict mode
-## Funcionalidades 
+
+## ⚙️Funcionalidades 
 Com o código já pronto, ele ficará dessa forma.
 
-## Fontes Consultadas
+## ♾️Fontes Consultadas
 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Link do Bootstrap  
 
 ## Tecnologias Utilizadas
+🟣JavaScript  
+🟣HTML  
+🟣Bootstrap  
+🟣CSS  
