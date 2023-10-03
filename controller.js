@@ -12,10 +12,10 @@ const limparFormulario = () => {
 
 // Verificar se CEP é válido
 const eNumero = (numero) => /^[0-9]+$/.test(numero); //Testa número informado com expressão regular
-const cepValido = (cep) => cep.legth == 8 && eNumero(cep); //Verifica tamnho do cep digitado e xeculta função de validação do cep eNumero
+const cepValido = (cep) => cep.length == 8 && eNumero(cep); //Verifica tamnho do cep digitado e xeculta função de validação do cep eNumero
 
 // Função para preencher formulário
-const preencherFormulario = (endereco) => { 
+const preencherFormulario = (endereco) => {
     document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
@@ -23,15 +23,22 @@ const preencherFormulario = (endereco) => {
 }
 
 // Consumo da API da ViaCep
-const pesquisarCep = async() => {
+const pesquisarCep = async () => {
     limparFormulario();
     const url = `http://viacep.com.br/ws/${cep.value}/json/`;
-    if(cepValido(cep.value)){
+    if (cepValido(cep.value)) {
         const dados = await fetch(url);  //esperar //abre uma porta para acessar a URL
         const addres = await dados.json(); //JSON tipo de linguagem
+        // hasOwnProperty retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
 
-        if(addres.hasOwnProperty('erro')){
-            alert('CEP não econtrado')
+        if (addres.hasOwnProperty('erro')) {
+            alert('CEP não econtrado');
+        } else {
+            preencherFormulario(addres);
         }
-    } 
+    } else {
+        alert('CEP Incorreto');
+    }
 }
+// Adiciona efeito DOM ao input do CEP para executar função pesquisarCEP
+document.getElementById('cep').addEventListener('focusout', pesquisarCep);
