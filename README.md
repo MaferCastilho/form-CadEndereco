@@ -8,10 +8,11 @@
 Nesse projeto pegamos um código do Bootstrap 5 de layout e colocamos no VScode, a forma que iremos utilizar é para um usúario cadastrar o seu endereço.  
 Passo a passo de como pegar o código do bootstrap:  
 Primerio vai na barra de pesquisa Bootstrap 5, vai entrar no link, na tela principal do Bootstrap vai olha no canto esquerdo da tela e irá em forms, dentro de forms vai ter Layout, quando estiver layout vai no canto superior da tela direita e ir em Gutters, aí estará o modelo de como ficará o projeto e os código que usou.  
-Irei deixar um video do mesmo passo a passo para facilitar caso mesmo assim não entenda o processo.  
+Irei deixar um video do mesmo passo a passo para facilitar caso mesmo assim não entenda o processo.   
+<br><br>
 ![image info](_img/video-demonstrativo.gif)   
 
-## Funções
+## ⚙️Funções
 Iniciamos os códigos do JavaScript  
 Função para limpar o formulário
 
@@ -66,16 +67,22 @@ JSON tipo de linguagem
     } 
 
 Adiciona efeito DOM ao input do CEP para executar função pesquisarCEP  
+(o DOM é um tipo de caminho que irá te auxilar nos códigos. 
+Para mais informações acesse o link da [mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction))
 
     document.getElementById('cep').addEventListener('focusout', pesquisarCep);       
 
 ## ♾️Fontes Consultadas
 [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - 🖇️Link do Bootstrap  
-[ViaCep](https://viacep.com.br/exemplo/javascript/) - 🖇️Link do ViaCep
+[ViaCep](https://viacep.com.br/exemplo/javascript/) - 🖇️Link do ViaCep  
 
-## Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 🟣JavaScript  
 🟣HTML 5  
 🟣Bootstrap 5  
 🟣CSS 3  
+🟣GitHub  
 
+## 🔻Autores
+| [<img loading="lazy" src="https://user-images.githubusercontent.com/127853659/273245697-656cec7e-3ce9-44ec-9fbc-f1f1c859b5da.jpg" width=115><br><sub>Maria Fernanda 🤍</sub>](https://github.com/MaferCastilho) |  [<img loading="lazy" src="https://user-images.githubusercontent.com/127853659/273244356-96c2ee2f-8a85-49d9-be21-11877ea502a0.jpg" width=115><br><sub>Janaina Paulino 🖤</sub>](https://github.com/janapaulinoo) |  [<img loading="lazy" src="https://user-images.githubusercontent.com/127853659/273246128-5ed08031-3a43-4fac-9fce-73a0bd0f1f0e.jpg" width=115><br><sub>Iris Carolina 💗</sub>](https://github.com/iriscarolina) |
+| :---: | :---: | :---: |
