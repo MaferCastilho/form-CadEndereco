@@ -28,7 +28,7 @@ Na primeira função utilizamos Arrown Function, que testa número informado com
 
     const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
-Na segunda função verifica tamnho do cep digitado e xeculta função de validação do cep eNumero
+Na segunda função verifica tamanho do cep digitado e xeculta função de validação do cep eNumero
   
     const cepValido = (cep) => cep.length == 8 && eNumero(cep); 
 
@@ -43,15 +43,16 @@ Tem a função de preencher formulário
 
 Consumo da API da ViaCep  
 abre uma porta para acessar a URL  
+Função async: significa que o valor de retorno da função será visivel para a pessoas que está execultando, se a função der certo ou errado ela irá dar um retorno, uma Promise. (o que é promisse? representa a conclusão (ou falha) de uma operação assíncrona e seu valor resultante.)  
+função await: é uma função para esperar por uma promisse.
+função feth: vai se encaminhar para o link do viaCep e pegar os dados que estão lá, e trazer para o const dados.
+JSON tipo de linguagem 
 
     const pesquisarCep = async () => {
     limparFormulario();
     const url = `http://viacep.com.br/ws/${cep.value}/json/`;
     if (cepValido(cep.value)) {
     const dados = await fetch(url); 
-
-JSON tipo de linguagem  
-
     const addres = await dados.json();
 
 ``hasOwnProperty`` retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão  

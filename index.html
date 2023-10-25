@@ -11,38 +11,40 @@
 </head>
 
 <body>
-  <form class="row g-3">
-    <h1>cadastro</h1>
-    <div class="col-6">
-      <label for="inputZip" class="form-label">E-mail</label>
-      <input type="text" class="form-control" id="email">
-    </div>
-    <div class="col-6">
-      <label for="inputZip" class="form-label">Nome</label>
-      <input type="text" class="form-control" id="nome">
-    </div>
-    <div class="col-6">
-      <label for="inputZip" class="form-label">Data nascimento</label>
-      <input type="date" class="form-control" id="dataNasc">
-    </div>
-    </div>
-    <div class="col-6">
-      <d<div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          Femenino
-        </label>
+  <div class="container">
+    <form class="row g-3">
+      <h1>Cadastro</h1>
+      <div class="col-6">
+        <label for="inputZip" class="form-label">E-mail</label>
+        <input type="text" class="form-control border border-info rounded-1 " id="email" placeholder="name@example.com">
       </div>
-      
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-        <label class="form-check-label" for="flexRadioDefault2">Masculino
-        </label>
+      <div class="col-6">
+        <label for="inputZip" class="form-label">Nome</label>
+        <input type="text" class="form-control border border-info rounded-1" id="nome">
       </div>
-      
-    </div>
+      <div class="col-6">
+        <label for="inputZip" class="form-label">Data nascimento</label>
+        <input type="date" class="form-control border border-info rounded-1" id="dataNasc">
+      </div>
+      <span class="border border-info-subtle form-control">
+        <label for="">Sexo:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">Feminino</label>
+        </div>
+      </span>
+      <div class="col-6">
+        <label for="inputZip" class="form-label">Número</label>
+        <input type="" class="form-control border border-info rounded-1" id="numero" placeholder="00 00000-0000">
+      </div>
+  </div>
   </form><br>
-
+</div>
+  <div class="container">
   <form class="row g-3">
     <div class="col-4">
       <h1>Endereço</h1>
@@ -75,5 +77,9 @@
   </form>
   <script type="text/javascript" src="./controller.js"></script>
 </body>
-
 </html>
+</div>
+
+
+
+<!-- https://getbootstrap.com/docs/5.0/utilities/borders/ -->
