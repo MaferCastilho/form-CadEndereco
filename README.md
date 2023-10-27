@@ -8,9 +8,13 @@
 Nesse projeto pegamos um código do Bootstrap 5 de layout e colocamos no VScode, a forma que iremos utilizar é para um usúario cadastrar o seu endereço.  
 Passo a passo de como pegar o código do bootstrap:  
 Primerio vai na barra de pesquisa Bootstrap 5, vai entrar no link, na tela principal do Bootstrap vai olha no canto esquerdo da tela e irá em forms, dentro de forms vai ter Layout, quando estiver layout vai no canto superior da tela direita e ir em Gutters, aí estará o modelo de como ficará o projeto e os código que usou.  
-Irei deixar um video do mesmo passo a passo para facilitar caso mesmo assim não entenda o processo.   
+Irei deixar um video do mesmo passo a passo para facilitar caso mesmo assim não entenda o processo.  
+Reutilizamos o código do ultimo trabalho que fizemos e adicionamos campos de cadastro, neste campo possui, nome, e-mail, data de nascimento, Telefone, senha, confirmação de senha e sexo, feito isso, mexemos nas linhas para mudar a  cor e organizamos a tela para se adaptar. 
 <br><br>
-![image info](_img/video-demonstrativo.gif)   
+![image info](_img/video-demonstrativo.gif)  
+
+Funcionamento do trabalho Pronto
+![image info](_img/funcionamento%20da%20tela%20-%20Copia.mp4)
 
 ## ⚙️Funções
 Iniciamos os códigos do JavaScript  
@@ -42,9 +46,9 @@ Tem a função de preencher formulário
     }
 
 Consumo da API da ViaCep  
-abre uma porta para acessar a URL  
-Função async: significa que o valor de retorno da função será visivel para a pessoas que está execultando, se a função der certo ou errado ela irá dar um retorno, uma Promise. (o que é promisse? representa a conclusão (ou falha) de uma operação assíncrona e seu valor resultante.)  
-função await: é uma função para esperar por uma promisse.
+abre uma porta para acessar a URL   
+Função async: significa que o valor de retorno da função será visivel para a pessoas que está execultando, se a função der certo ou errado ela irá dar um retorno, uma Promise. (o que é promisse? representa a conclusão (ou falha) de uma operação assíncrona e seu valor resultante).  
+função await: é uma função para esperar por uma promisse.  
 função feth: vai se encaminhar para o link do viaCep e pegar os dados que estão lá, e trazer para o const dados.
 JSON tipo de linguagem 
 
@@ -69,7 +73,8 @@ JSON tipo de linguagem
 
 Adiciona efeito DOM ao input do CEP para executar função pesquisarCEP  
 (o DOM é um tipo de caminho que irá te auxilar nos códigos. 
-Para mais informações acesse o link da [mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction))
+Para mais informações acesse o link da [mozilla](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction))  
+``addEventListener``permite que você configure funções a serem chamadas quando um evento específico acontece, como, por exemplo, quando um usuário clica em um botão.
 
     document.getElementById('cep').addEventListener('focusout', pesquisarCep);       
 

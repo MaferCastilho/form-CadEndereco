@@ -10,75 +10,102 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-light">
+  <br>
   <div class="container">
-    <form class="row g-3">
-      <h1>Cadastro</h1>
-      <div class="col-6">
-        <label for="inputZip" class="form-label">E-mail</label>
-        <input type="text" class="form-control border border-info rounded-1 " id="email" placeholder="name@example.com">
-      </div>
-      <div class="col-6">
-        <label for="inputZip" class="form-label">Nome</label>
-        <input type="text" class="form-control border border-info rounded-1" id="nome">
-      </div>
-      <div class="col-6">
-        <label for="inputZip" class="form-label">Data nascimento</label>
-        <input type="date" class="form-control border border-info rounded-1" id="dataNasc">
-      </div>
-      <span class="border border-info-subtle form-control">
-        <label for="">Sexo:</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+    <h1>Cadastre-se</h1>
+    <div class="p-3 mb-2 bg-info text-dark">
+      <form class="row g-3 ">
+        <h3>Dados pessoais</h3>
+        <div class="col-6">
+          <label for="inputZip" class="form-label">E-mail</label><br>
+          <input type="text" class="form-control border border-info rounded-1 " id="email"
+            placeholder="name@example.com"><br>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-          <label class="form-check-label" for="flexRadioDefault2">Feminino</label>
+        <div class="col-6">
+          <label for="inputZip" class="form-label">Nome</label><br>
+          <input type="text" class="form-control border border-info rounded-1" id="nome"><br>
         </div>
-      </span>
-      <div class="col-6">
-        <label for="inputZip" class="form-label">Número</label>
-        <input type="" class="form-control border border-info rounded-1" id="numero" placeholder="00 00000-0000">
-      </div>
+        <div class="col-6">
+          <label for="inputZip" class="form-label">Data nascimento</label><br>
+          <input type="date" class="form-control border border-info rounded-1" id="dataNasc">
+        </div><br>
+        <div class="col-6">
+          <label for="inputZip" class="form-label">Telefone</label><br>
+          <input type="" class="form-control border border-info rounded-1" id="numero" placeholder="00 00000-0000"><br>
+        </div>
+
+        <div class="col-6">
+          <label for="senha" class="form-label">Senha</label><br>
+          <input type="password" class="form-control border border-info rounded-1" id="senha"><br>
+        </div>
+        <div class="col-6">
+          <label for="confirmSenha" class="form-label">Confirme a Senha</label><br>
+          <input type="password" class="form-control border border-info rounded-1" id="confirmSenha"><br>
+        </div>
+
+        <div class="p-3">
+          <label for="">Sexo</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">Feminino</label>
+          </div>
+        </div>
+
+      <!-- </form>
+    </div> -->
+
+    <!-- <div class="p-3 mb-2 bg-dark text-white"> -->
+      <!-- <form class="row g-3"> -->
+        <h3>Dados de endereço</h3>
+        <div class="col-3">
+          <label for="inputZip" class="form-label">CEP</label>
+          <input type="text" class="form-control border border-info rounded-1" id="cep">
+        </div>
+
+        <br>
+
+        <div class="col-6">
+          <label for="inputAddress" class="form-label">Endereço</label>
+          <input type="text" class="form-control border border-info rounded-1" id="rua" placeholder="rua dos bobos">
+        </div>
+
+        <div class="col-3">
+          <label for="inputAddress" class="form-label">Numero</label>
+          <input type="text" class="form-control border border-info rounded-1" id="numero">
+        </div>
+
+        <div class="col-4">
+          <label for="inputAddress2" class="form-label">Bairro</label>
+          <input type="text" class="form-control border border-info rounded-1" id="bairro"
+            placeholder="Apartment, studio, or floor">
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Cidade</label>
+          <input type="text" class="form-control border border-info rounded-1" id="cidade">
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Estado</label>
+          <input id="estado" class="form-control border border-info rounded-1">
+        </div>
+        <br>
+        <div class="col-12">
+          <button type="submit" class="btn btn-outline-primary">Cadastrar</button>
+        </div>
+
+      <!-- </form>
+    </div> -->
   </div>
-  </form><br>
-</div>
-  <div class="container">
-  <form class="row g-3">
-    <div class="col-4">
-      <h1>Endereço</h1>
-      <label for="inputZip" class="form-label">CEP</label>
-      <input type="text" class="form-control" id="cep">
-    </div><br>
-    <div class="col-9">
-      <label for="inputAddress" class="form-label">Endereço:</label>
-      <input type="text" class="form-control" id="rua" placeholder="rua dos bobos">
-    </div>
-    <div class="col-3">
-      <label for="inputAddress" class="form-label">Numero:</label>
-      <input type="text" class="form-control" id="numero">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Bairro:</label>
-      <input type="text" class="form-control" id="bairro" placeholder="Apartment, studio, or floor">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">Cidade:</label>
-      <input type="text" class="form-control" id="cidade">
-    </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">Estado:</label>
-      <input id="estado" class="form-control">
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
-    </div>
-  </form>
   <script type="text/javascript" src="./controller.js"></script>
 </body>
+
 </html>
-</div>
 
 
 

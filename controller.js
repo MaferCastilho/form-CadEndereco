@@ -16,7 +16,7 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep); //Verifica tamnho do
 
 // Função para preencher formulário
 const preencherFormulario = (endereco) => {
-    document.getElementById('rua').value = endereco.gfv;
+    document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
     document.getElementById('estado').value = endereco.uf;
