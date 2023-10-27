@@ -25,7 +25,7 @@ const preencherFormulario = (endereco) => {
 // Consumo da API da ViaCep
 const pesquisarCep = async () => {
     limparFormulario();
-    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
     if (cepValido(cep.value)) {
         const dados = await fetch(url);  //esperar //abre uma porta para acessar a URL
         const addres = await dados.json(); //JSON tipo de linguagem
