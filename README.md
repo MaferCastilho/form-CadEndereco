@@ -13,7 +13,7 @@ Reutilizamos o código do ultimo trabalho que fizemos e adicionamos campos de ca
 <br><br>
 ![image info](_img/video-demonstrativo.gif)  
 
-Funcionamento do trabalho Pronto
+Funcionamento do trabalho Pronto  
 ![image info](_img/funcionamento%20da%20tela%20-%20Copia.mp4)
 
 ## ⚙️Funções
